@@ -1,0 +1,166 @@
+/* ------------- General ------------- */
+* {
+padding: 0;
+margin: 0;
+}
+
+a {
+text-decoration: none;
+}
+
+a.inlined-link {
+text-decoration: underline;
+}
+
+.grey, body, .inlined-link {
+color: #717f74;
+}
+
+.white, a, ul#nav a:hover {
+color: white;
+}
+
+.blue, h1, a:hover, span.welcome, .project-name, #footer a {
+color: #2F84E4;
+}
+
+#footer a:hover {
+text-decoration: underline;
+}
+
+img.project-icon {
+width: 100px;
+}
+
+.project-name {
+font-size: 18px;
+}
+
+h1 {
+border-bottom: thin solid #6e7a8b;
+margin-bottom: 26px;
+}
+
+.highlight {
+background-color: #2F84E3; /*blue*/
+line-height: 3;
+padding: 8px;
+font-weight: bold;
+font-style: italic;
+color: black;
+}
+
+p {
+margin-bottom: 18px;
+line-height: 1.4em;
+
+}
+
+img.avatar, img.project-icon {
+display: block;
+}
+
+/* ------------- Content Structure & Styling ------------- */
+body {
+background: #000 url(dark-bg.png) repeat-x fixed center bottom;
+font-family: geneva, verdana, arial, helvetica, sans-serif;
+font-size: 12px;
+}
+
+.center {
+margin: auto;
+width: 800px;
+}
+
+#logo {
+margin-bottom: -55px;
+}
+
+#header {
+height: 50px;
+border-bottom: thin solid #6e7a8b;
+clear: both;
+}
+
+#footer {
+height: 50px;
+border-top: thin solid #6e7a8b;
+background-color: #1d1d1d;
+clear: both;
+text-align: center;
+}
+
+#content {
+padding-top: 30px;
+}
+
+#nav-column {
+float: left;
+width: 140px;
+height: 100%;
+}
+
+#content-column {
+margin-top: 120px;
+margin-left: 178px;
+}
+
+div.section {  
+margin-bottom: 50px;
+text-align: justify;
+overflow: hidden;
+}
+
+.project {
+clear: both;
+margin-bottom: 30px;
+overflow: hidden;
+}
+
+.left-sidebar {
+float: left;
+margin: 0 10px 10px 0;
+padding: 10px;
+border-right: thin solid #6e7a8b;
+min-height: 100px;
+}
+
+.right-sidebar {
+float: right;
+margin: 0 0 10px 10px;
+padding: 10px;
+border-left: thin solid #6e7a8b;
+}
+
+/* ------------- Navigation ------------- */
+ul#nav {
+position: fixed;
+list-style: none;
+text-align: right;
+width: 140px;
+}
+
+ul#nav li {
+margin-top: 5px;
+margin-bottom: 5px;
+background-image: url('opacity-0.1.png');
+}
+
+ul#nav li:hover {
+background-color: #242424;
+background-image: none;
+}
+
+ul#nav li.selected {
+border-right: 3px solid #e9e2d9;    
+}
+
+ul#nav a {
+display: block;
+padding-bottom: 3px;
+padding-top: 3px;
+padding-right: 10px;
+font-size: 14px;
+color: #555;
+text-decoration: none;
+}
